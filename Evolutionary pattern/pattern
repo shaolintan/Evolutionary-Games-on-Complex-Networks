@@ -1,0 +1,13 @@
+import numpy as np
+import math
+
+x=np.random.rand(2000)
+y=np.random.rand(2000)
+
+
+for i in range(2000):
+    N[i]=[]
+    for j in range(2000):
+        if math.sqrt((x[i]-x[j])^2+(y[i]-y[j])^2)<0.05:
+            N[i].append(j)
+        
